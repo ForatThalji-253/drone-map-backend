@@ -26,8 +26,7 @@ app.use(cors());
 // });
 
 
-// LISTEN
-const port = 9013;
-server.listen(port, () => {
-  console.log(`App running on port ${port}...`);
+const PORT = process.env.PORT || 9013; // 3000 للـ localhost
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
